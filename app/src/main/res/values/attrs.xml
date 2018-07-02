@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="isScaleImage" format="boolean"></attr>
+    <attr name="isScaleToValue" format="boolean"></attr>
+    <attr name="maxScale" format="float"></attr>
+
+    <declare-styleable name="ScaleImageView">
+        <attr name="isScaleImage"></attr>
+        <attr name="isScaleToValue"></attr>
+        <attr name="maxScale"></attr>
+    </declare-styleable>
+
+</resources>
