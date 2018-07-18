@@ -8,7 +8,7 @@
     <views.ScaleImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:isScaleImage="true"
-        android:src="@drawable/image1"/>
+
+        android:src="@drawable/image2"/>
 
 </LinearLayout>

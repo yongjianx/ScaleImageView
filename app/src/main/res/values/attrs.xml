@@ -4,7 +4,7 @@
     <attr name="isScaleToValue" format="boolean"></attr>
     <attr name="maxScale" format="float"></attr>
 
-    <declare-styleable name="ScaleImageView">
+    <declare-styleable name="ScaleImageView2">
         <attr name="isScaleImage"></attr>
         <attr name="isScaleToValue"></attr>
         <attr name="maxScale"></attr>
