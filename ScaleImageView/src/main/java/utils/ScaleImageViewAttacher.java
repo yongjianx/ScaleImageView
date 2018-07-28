@@ -182,15 +182,13 @@ public class ScaleImageViewAttacher implements View.OnTouchListener, View.OnLayo
 
                 //获取当前缩放值
                 float scale = getScale();
-//                Log.e(TAG, "scale="+scale+"mInitScale="+mInitScale);
-                //由于float的精度问题，缩放恢复到初始图片尺寸时可能有偏差
+                /*
+                 * 由于计算机储存float类型时会采用四舍五入方法，导致最终的放大缩小倍数不是完全精确到指定的值，
+                 * 所以如果当前的放大缩小倍数与初始值的绝对值误差小于0.02时即认为本次的放大缩小倍数就是初始的倍数
+                 */
                 if (Math.abs(scale - mInitScale) < 0.02)
                     scale = mInitScale;
-                /*
-                 * 在Runnable中由于计算机储存float类型时会采用四舍五入方法，导致最终的mTarget放大缩小倍数不是完全
-                 * 精确到指定的值，所以如果当前的放大缩小倍数与初始值的绝对值误差小于0.06时即认为本次的放大缩小倍数
-                 * 就是初始的倍数
-                 */
+
                 //当前缩放值大于初使的缩放值，对其进行缩小操作
                 if (scale > mInitScale){
                     new Thread(new AutoScaleRunnable(x, y, getScale(), mInitScale)).start();
@@ -335,7 +333,8 @@ public class ScaleImageViewAttacher implements View.OnTouchListener, View.OnLayo
         if (mGestureDetector.onTouchEvent(event)){
             return true;
         }
-        mOnGeatureDetector.onTouchEvent(event);//将事件传递给拖拽，快速滑动，多点触控缩放手势检测的onTouchEvent处理
+        //将事件传递给拖拽，快速滑动，多点触控缩放手势检测的onTouchEvent处理
+        mOnGeatureDetector.onTouchEvent(event);
         return true;
     }
 

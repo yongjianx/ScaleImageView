@@ -8,18 +8,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.io.IOException;
+
+import views.MyViewPager;
 import views.ScaleImageView;
 
 public class ViewPagerActivity extends AppCompatActivity {
     private static final String TAG = "ViewPagerActivity";
-    private ViewPager viewPager;
+    private MyViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewpager);
 
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager = (MyViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new ViewPagerAdapter());
 
     }
