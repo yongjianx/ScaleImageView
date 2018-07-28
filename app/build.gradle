@@ -38,4 +38,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
 
     compile 'com.android.support:recyclerview-v7:26.0.0'
+    compile project(path: ':ScaleImageView')
 }

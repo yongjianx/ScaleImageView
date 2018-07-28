@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import java.io.IOException;
 import java.io.InputStream;
 
-import utils.ScaleImageViewAttacher;
 import views.ScaleImageView;
 
 public class SampleActivity extends AppCompatActivity {

@@ -1,1 +1,1 @@
-include ':app', ':imagescale2'
+include ':app', ':ScaleImageView'

@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ImageScale.iml" filepath="$PROJECT_DIR$/ImageScale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScaleImageView/imagescale2.iml" filepath="$PROJECT_DIR$/ScaleImageView/imagescale2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imagescale2/imagescale2.iml" filepath="$PROJECT_DIR$/imagescale2/imagescale2.iml" />
     </modules>
   </component>
 </project>
