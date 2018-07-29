@@ -1,7 +1,8 @@
 # ScaleImageView
 **android图片缩放库，支持单击、双击、长按、拖拽、多点触控缩放**\
 <br>
-基于PhotoView实现，并在PhotoView的基础上做了改进，比如允许图片偏离x方向边界，手指抬起时回弹。
+基于-[PhotoView](https://github.com/chrisbanes/PhotoView)实现，并在`PhotoView`的基础上做了改进，比如允许图片偏离x方向边界，手指抬起时回弹。\
+为方便大家学习，我仓库上的[PhotoView](https://github.com/yongjianx/PhotoView)源码我作了详细注释.
 ## 使用方法：
 将以下内容添加到根目录下的`build.gradle`(**注意**：不是`module:app`下的`build.gradle`）
 ```gdb
