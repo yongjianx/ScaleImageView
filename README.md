@@ -31,12 +31,12 @@ dependencies {
 在`activity`中
 ```
 imageView =  (ScaleImageView) findViewById(R.id.imageView);
-        try {
-            getBitmapForImgResourse(this, R.drawable.image, imageView);
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
+try {
+    getBitmapForImgResourse(this, R.drawable.image, imageView);
+}
+catch (IOException e){
+    e.printStackTrace();
+}
 ```
 `getBitmapForImgResourse(this, R.drawable.image, imageView);`**加载大图片时防止OOM**\
 也可以使用图片加载框架--[Glide](https://github.com/bumptech/glide/releases)
