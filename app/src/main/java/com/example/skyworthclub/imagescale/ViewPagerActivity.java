@@ -34,7 +34,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         public Object instantiateItem(ViewGroup container, int position) {
 
             ScaleImageView view = new ScaleImageView(container.getContext());
-            view.setIsViewPager(true);
+            view.setIsViewPager(true);//标识ViewGroup为ViewPager,处理滑动冲突
             try {
                 SampleActivity.getBitmapForImgResourse(container.getContext(), MDRAWABLES[position], view);
             }

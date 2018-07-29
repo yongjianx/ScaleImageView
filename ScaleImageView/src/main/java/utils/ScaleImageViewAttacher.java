@@ -149,7 +149,6 @@ public class ScaleImageViewAttacher implements View.OnTouchListener, View.OnLayo
      */
     public ScaleImageViewAttacher(ImageView imageView){
         mImageView = imageView;
-        mImageView.setScaleType(ImageView.ScaleType.MATRIX);//设置ImageView的缩放类型为Matrix
         mImageView.setOnTouchListener(this);
         mImageView.addOnLayoutChangeListener(this);
         mMatrix = new Matrix();

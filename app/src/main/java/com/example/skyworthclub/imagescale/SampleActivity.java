@@ -19,8 +19,8 @@ public class SampleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample);
-        imageView =  (ScaleImageView) findViewById(R.id.imageView);
 
+        imageView =  (ScaleImageView) findViewById(R.id.imageView);
         try {
             getBitmapForImgResourse(this, R.drawable.image, imageView);
         }

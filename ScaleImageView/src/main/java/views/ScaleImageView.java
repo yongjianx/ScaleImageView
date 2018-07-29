@@ -27,6 +27,7 @@ public class ScaleImageView extends AppCompatImageView {
     }
     public ScaleImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        setScaleType(ScaleType.MATRIX);
         attacher = new ScaleImageViewAttacher(this);
     }
 
@@ -102,6 +103,7 @@ public class ScaleImageView extends AppCompatImageView {
         attacher.setOnClickListener(listener);
     }
 
+    //标识ViewGroup为ViewPager,处理滑动冲突
     public void setIsViewPager(boolean isViewPager){
         attacher.setIsViewPager(isViewPager);
     }
