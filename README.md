@@ -1,4 +1,6 @@
 # ScaleImageView
+*`v1.1`*\
+<br>
 **android图片缩放库，支持单击、双击、长按、拖拽、多点触控缩放**\
 <br>
 基于-[PhotoView](https://github.com/chrisbanes/PhotoView)实现，并在`PhotoView`的基础上做了改进，比如允许图片偏离x方向边界，手指抬起时回弹。\
