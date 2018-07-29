@@ -1,5 +1,7 @@
 # ScaleImageView
-**android图片缩放库，支持单击、双击、长按、拖拽、多点触控缩放**
+**android图片缩放库，支持单击、双击、长按、拖拽、多点触控缩放**\
+<br>
+基于PhotoView实现，并在PhotoView的基础上做了改进，比如允许图片偏离x方向边界，手指抬起时回弹。
 ## 使用方法：
 将以下内容添加到根目录下的`build.gradle`(**注意**：不是`module:app`下的`build.gradle`）
 ```gdb
@@ -62,11 +64,17 @@ public class MyViewPager extends ViewPager {
     }
 }
 ```
-然后在`PagerAdapter`的`instantiateItem()`方法中添加以下内容
+然后, 在`PagerAdapter`的`instantiateItem()`方法中添加以下内容
 ```
 ScaleImageView view = new ScaleImageView(container.getContext());
 view.setIsViewPager(true);//标识ViewGroup为ViewPager,处理滑动冲突
 ```
+最后，在`activity`中设置`ViewPager`的适配器
+```
+viewPager = (MyViewPager) findViewById(R.id.viewPager);
+viewPager.setAdapter(new ViewPagerAdapter());
+```
+具体可参考`app/src/main/java/com/example/skyworthclub/imagescale/ViewPagerActivity.java`的实现.
 ## 关于*API*
 ```
 //设置初始图片的尺寸，不调用此方法时初始值由初始加载图片时计算出来
